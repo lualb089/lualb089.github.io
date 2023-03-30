@@ -1,5 +1,10 @@
-body{
-    background-color: lavender;
+
+body {
+  background-color: rgb(2, 13, 14);
+  background-image:url(graphics/back.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  padding-left: 15pt;
 }
 
 p{
@@ -14,10 +19,16 @@ h1{
     color: rgb(63, 3, 72);
 }
 
+h5{
+  font-family: 'Rowdies', cursive;
+  font-size: 30pt;
+  color: rgb(63, 3, 72);
+}
+
 ul{
     font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
-    color: rgb(97, 14, 109);
+    font-size: large;
+    color: rgb(222, 185, 227);
 }
 
 ol{
@@ -33,5 +44,76 @@ ol{
 #bkg{
     background-color: rgb(224, 196, 224);
     height: 500px;
-    width: 700px;
+    width: 600px;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: rgb(220, 184, 241);
+  padding: 20px 10px;
+  padding-right: 5pt;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(29, 11, 46);
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: rgb(204, 140, 237);
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: rgb(98, 25, 119);
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 150pt;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
